@@ -25,3 +25,10 @@ run-go-ts-nest:
 
 ab-go-ts-nest:
 	ab -n 10000 -c 100 http://localhost:3006/
+
+
+run-ts-bunrest:
+	cd ./ts-bunrest && bun serve
+
+ab-ts-bunrest:
+	ab -n 100 -c 100 http://localhost:3009/

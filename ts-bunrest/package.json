@@ -1,0 +1,14 @@
+{
+  "name": "ts-bunrest",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "serve": "bun index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "^0.1.0"
+  },
+  "dependencies": {
+    "bunrest": "^1.1.4"
+  }
+}
