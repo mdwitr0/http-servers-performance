@@ -1,6 +1,27 @@
 # Http server performance banchmarks
 
-# Go fasthttp
+## JS(TS) Bun
+```
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3007
+
+Document Path:          /
+Document Length:        24 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.279 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1090000 bytes
+HTML transferred:       240000 bytes
+Requests per second:    35843.19 [#/sec] (mean)
+Time per request:       2.790 [ms] (mean)
+Time per request:       0.028 [ms] (mean, across all concurrent requests)
+Transfer rate:          3815.34 [Kbytes/sec] received
+```
+
+## Go fasthttp
 ```
 Server Software:        fasthttp
 Server Hostname:        localhost
