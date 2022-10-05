@@ -13,7 +13,7 @@ ab-go-fasthttp:
 
 
 run-js-node:
-	cd ./ts-bun && bun serve
+	cd ./js-node && bun serve
 
 ab-js-node:
 	ab -n 10000 -c 100 http://localhost:3010/
