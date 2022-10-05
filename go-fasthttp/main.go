@@ -20,7 +20,7 @@ func requestHandler(ctx *fasthttp.RequestCtx) {
 		ctx.Response.Header.SetCanonical(strContentType, strApplicationJSON)
 		ctx.Response.SetStatusCode(200)
 
-		response := map[string]string{"result": fmt.Sprintf("hello world")}
+		response := map[string]string{"result": fmt.Sprintf("Hello world")}
 		if err := json.NewEncoder(ctx).Encode(response); err != nil {
 			log.Fatal(err)
 		}
