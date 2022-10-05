@@ -44,6 +44,27 @@ Time per request:       0.033 [ms] (mean, across all concurrent requests)
 Transfer rate:          5063.26 [Kbytes/sec] received
 ```
 
+### JS [nodejs](https://github.com/nodejs/node)
+```
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3010
+
+Document Path:          /
+Document Length:        11 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.384 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      860000 bytes
+HTML transferred:       110000 bytes
+Requests per second:    26027.91 [#/sec] (mean)
+Time per request:       3.842 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          2185.94 [Kbytes/sec] received
+```
+
 ## Тесты фреймворков для rest api
 ### JS(TS) [nestjs](https://github.com/nestjs/nest)
 ```

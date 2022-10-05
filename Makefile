@@ -12,6 +12,12 @@ ab-go-fasthttp:
 	ab -n 10000 -c 100 http://localhost:3008/
 
 
+run-js-node:
+	cd ./ts-bun && bun serve
+
+ab-js-node:
+	ab -n 10000 -c 100 http://localhost:3010/
+
 run-go-gin:
 	cd ./go-gin && go run main.go
 
