@@ -12,6 +12,14 @@ ab-go-fasthttp:
 	ab -n 10000 -c 100 http://localhost:3008/
 
 
+run-go-gin:
+	cd ./go-gin && go run main.go
+
+ab-go-gin:
+	ab -n 10000 -c 100 http://localhost:3005/
+
+
+
 run-go-ts-nest:
 	cd ./ts-nest && npm run build && npm run start:prod
 
