@@ -17,15 +17,12 @@ var (
 
 func requestHandler(ctx *fasthttp.RequestCtx) {
 	if string(ctx.Method()) == "GET" {
-		switch string(ctx.Path()) {
-		default:
-			ctx.Response.Header.SetCanonical(strContentType, strApplicationJSON)
-			ctx.Response.SetStatusCode(200)
+		ctx.Response.Header.SetCanonical(strContentType, strApplicationJSON)
+		ctx.Response.SetStatusCode(200)
 
-			response := map[string]string{"result": fmt.Sprintf("hello world")}
-			if err := json.NewEncoder(ctx).Encode(response); err != nil {
-				log.Fatal(err)
-			}
+		response := map[string]string{"result": fmt.Sprintf("hello world")}
+		if err := json.NewEncoder(ctx).Encode(response); err != nil {
+			log.Fatal(err)
 		}
 	}
 }
