@@ -2,39 +2,39 @@ run-ts-bun:
 	cd ./ts-bun && bun serve
 
 ab-ts-bun:
-	ab -n 10000 -c 100 http://localhost:3007/
+	wrk -t10 -c400 -d30s  https://api.kinopoisk.dev/movie?token=QBQ8VDZ-41DMCH4-HVC9GPH-Y1H4D7J&search=427631&field=id
 
 
 run-go-fasthttp:
 	cd ./go-fasthttp && go run main.go
 
 ab-go-fasthttp:
-	ab -n 10000 -c 100 http://localhost:3008/
+	wrk -t10 -c400 -d30s http://localhost:3008/
 
 
 run-js-node:
-	cd ./js-node && bun serve
+	cd ./js-node && nvm use 18 && npm run serve
 
 ab-js-node:
-	ab -n 10000 -c 100 http://localhost:3010/
+	wrk -t10 -c400 -d30s http://localhost:3010/
+
 
 run-go-gin:
 	cd ./go-gin && go run main.go
 
 ab-go-gin:
-	ab -n 10000 -c 100 http://localhost:3005/
-
+	wrk -t10 -c400 -d30s http://localhost:3005/
 
 
 run-go-ts-nest:
 	cd ./ts-nest && npm run build && npm run start:prod
 
 ab-go-ts-nest:
-	ab -n 10000 -c 100 http://localhost:3006/
+	wrk -t10 -c400 -d30s http://localhost:3006/
 
 
 run-ts-bunrest:
 	cd ./ts-bunrest && bun serve
 
 ab-ts-bunrest:
-	ab -n 100 -c 100 http://localhost:3009/
+	wrk -t10 -c400 -d30s http://localhost:3009/
