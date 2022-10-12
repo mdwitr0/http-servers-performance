@@ -2,7 +2,7 @@ run-ts-bun:
 	cd ./ts-bun && bun serve
 
 ab-ts-bun:
-	wrk -t10 -c400 -d30s  https://api.kinopoisk.dev/movie?token=QBQ8VDZ-41DMCH4-HVC9GPH-Y1H4D7J&search=427631&field=id
+	wrk -t10 -c400 -d30s  http://localhost:3007/
 
 
 run-go-fasthttp:
