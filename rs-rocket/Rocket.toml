@@ -1,2 +1,7 @@
 [global]
 port = 3012
+workers = 24
+keep_alive = 24
+read_timeout = 5
+write_timeout = 5
+log = "normal"
