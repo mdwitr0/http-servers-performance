@@ -38,3 +38,9 @@ run-ts-bunrest:
 
 test-ts-bunrest:
 	wrk -t10 -c400 -d30s http://localhost:3009/
+
+run-rs-rocket:
+	cd ./rs-rocket && cargo run
+
+test-rs-rocket:
+	wrk -t10 -c400 -d30s http://127.0.0.1:3012/
