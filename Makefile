@@ -44,3 +44,9 @@ run-rs-rocket:
 
 test-rs-rocket:
 	wrk -t10 -c400 -d30s  http://127.0.0.1:3012/
+
+run-rs-actix:
+	cd ./rs-actix && cargo run
+
+test-rs-actix:
+	wrk -t10 -c400 -d30s  http://127.0.0.1:3013/
