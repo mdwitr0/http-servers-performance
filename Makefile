@@ -50,3 +50,9 @@ run-rs-actix:
 
 test-rs-actix:
 	wrk -t10 -c400 -d30s  http://127.0.0.1:3013/
+
+run-rs-hyper:
+	cd ./rs-hyper && cargo run
+
+test-rs-hyper:
+	wrk -t10 -c400 -d30s  http://127.0.0.1:3014/
