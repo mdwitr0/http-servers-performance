@@ -56,3 +56,9 @@ run-rs-hyper:
 
 test-rs-hyper:
 	wrk -t10 -c400 -d30s  http://127.0.0.1:3014/
+
+run-clj-luminus:
+	cd ./clj-luminus && lein run
+
+test-clj-luminus:
+	wrk -t10 -c400 -d30s  http://127.0.0.1:3015/
