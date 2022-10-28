@@ -62,3 +62,9 @@ run-clj-luminus:
 
 test-clj-luminus:
 	wrk -t10 -c400 -d30s  http://127.0.0.1:3015/
+
+run-py-flask:
+	cd ./py-flask && flask run
+
+test-py-flask:
+	wrk -t10 -c400 -d30s  http://localhost:5000/
