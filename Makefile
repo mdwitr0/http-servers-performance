@@ -68,3 +68,9 @@ run-py-flask:
 
 test-py-flask:
 	wrk -t10 -c400 -d30s  http://localhost:5000/
+
+run-kt-ktor:
+	cd ./kt-ktor && gradle run
+
+test-kt-ktor:
+	wrk -t10 -c400 -d30s  http://localhost:3016/
