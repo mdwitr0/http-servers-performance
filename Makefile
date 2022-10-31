@@ -26,12 +26,17 @@ test-go-gin:
 	wrk -t10 -c400 -d30s http://localhost:3005/
 
 
-run-go-ts-nest:
+run-ts-nest:
 	cd ./ts-nest && npm run build && npm run start:prod
 
-test-go-ts-nest:
+test-ts-nest:
 	wrk -t10 -c400 -d30s http://localhost:3006/
 
+run-ts-nest-fastify:
+	cd ./ts-nest-fastify && npm run build && npm run start:prod
+
+test-ts-nest-fastify:
+	wrk -t10 -c400 -d30s http://localhost:3017/
 
 run-ts-bunrest:
 	cd ./ts-bunrest && bun serve
