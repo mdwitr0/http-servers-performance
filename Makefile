@@ -79,3 +79,9 @@ run-kt-ktor:
 
 test-kt-ktor:
 	wrk -t10 -c400 -d30s  http://localhost:3016/
+
+run-cs-dotnet-core:
+	dotnet ./cs-dotnet-core/WebApplication1/bin/Debug/net6.0/WebApplication1.dll
+
+test-cs-dotnet-core:
+	wrk -t10 -c400 -d30s  https://localhost:7289/Hello
